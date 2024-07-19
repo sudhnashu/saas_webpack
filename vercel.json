@@ -1,0 +1,16 @@
+{
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "routes": [
+      {
+        "src": "/pdfjs-dist/build/pdf.worker.min.mjs",
+        "headers": {
+          "Content-Type": "application/javascript"
+        }
+      }
+    ]
+  }
+  
