@@ -16,11 +16,12 @@ import {useForm} from 'react-hook-form';
 import { cn } from '@/lib/utils';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import SimpleBar from "simplebar-react"
-// import PdfFullScreen from './PdfFullScreen';
-//////// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-//   'pdfjs-dist/build/pdf.worker.min.mjs',
-//   import.meta.url,
-// ).toString();
+import PdfFullScreen from './PdfFullScreen';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 
 interface PdfRendererProps{
